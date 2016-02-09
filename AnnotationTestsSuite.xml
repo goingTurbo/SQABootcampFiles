@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "TestNG Suite1">
+	<test name = "AssertionsAndAnnotationsTest">
+		<groups>
+			<run>
+				<exclude name="Odds"/>
+				<include name="Evens"/>
+			</run>
+		</groups>
+		<classes>
+			<class name = "com.sqa.ts.selenium.actions.AssertTests"/>
+			<class name = "com.sqa.ts.selenium.actions.BeforeAfterTests"/>
+			<class name = "com.sqa.ts.selenium.actions.GroupTests"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "TestNG Suite2">
+	<test name = "AssertionsAndAnnotationsTest">
+		<groups>
+   			<dependencies>
+   			<!-- the -->
+    			<group depends-on="Group5" name="Group4"/>
+    			<group depends-on="Group4" name="Group3"/>
+    			<group depends-on="Group3" name="Group2"/>
+    			<group depends-on="Group2" name="Group1"/>
+   			</dependencies>
+	  	</groups>
+		<classes>
+			<class name = "com.sqa.ts.selenium.actions.AssertTests"/>
+			<class name = "com.sqa.ts.selenium.actions.BeforeAfterTests"/>
+			<class name = "com.sqa.ts.selenium.actions.GroupTests"/>
+		</classes>
+	</test>
+</suite>
